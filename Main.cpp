@@ -16,7 +16,7 @@ double potega(double podstawa, double wykladnik)
 
 double metoda_newtona(double stopien, double wartosc, double a)
 {
-    return (((stopien - 1.0) * wartosc + a / (pow(wartosc, stopien - 1.0))) / stopien);
+    return (((stopien - 1.0) * wartosc + a / (potega(wartosc, stopien - 1.0))) / stopien);
 }
 
 double pierwiastek(int stopien, double wartosc)
